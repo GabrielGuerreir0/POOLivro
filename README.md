@@ -14,8 +14,8 @@ A classe `Autor` representa um autor de livros. Ela contém os seguintes atribut
 
 - **Atributos:**
   - `nome` (String): O nome do autor.
-  - `sobrenome` (String): O sobrenome do autor.
-  - `dataNascimento` (LocalDate): A data de nascimento do autor.
+  - `email` (String): O e-mail do autor.
+  - `cpf` (string): O cpf do autor.
 
 - **Métodos:**
   - Construtores para inicializar os atributos.
@@ -27,9 +27,11 @@ A classe `Autor` representa um autor de livros. Ela contém os seguintes atribut
 A classe `Livro` representa um livro. Ela contém os seguintes atributos e métodos:
 
 - **Atributos:**
-  - `titulo` (String): O título do livro.
+  - `nome` (String): O nome do livro.
+  - `descricao` (string): A descrição do livro.
+  - `valor` (double): O valor do livro.
   - `isbn` (String): O ISBN do livro.
-  - `autor` (Autor): O autor do livro (relação muitos-para-um).
+  - `autor` (Autor): O autor do livro.
 
 - **Métodos:**
   - Construtores para inicializar os atributos.
@@ -38,7 +40,7 @@ A classe `Livro` representa um livro. Ela contém os seguintes atributos e méto
 
 ### Classe `Main`
 
-A classe `Main` contém o método `main` e é responsável por criar instâncias das classes `Autor` e `Livro`, demonstrando a relação entre elas.
+A classe `Principal` contém o método `main` e é responsável por criar instâncias das classes `Autor` e `Livro`, demonstrando a relação entre elas.
 
 ## Requisitos
 
@@ -49,16 +51,16 @@ A classe `Main` contém o método `main` e é responsável por criar instâncias
 
 1. Clone este repositório para sua máquina local:
     ```bash
-    git clone https://github.com/seu-usuario/projeto-poo-livro-autor.git
+    git clone https://github.com/GabrielGuerreir0/POOLivro.git
     ```
 
 2. Abra o projeto em sua IDE de preferência.
 
-3. Compile e execute a classe `Main` para ver o projeto em ação.
+3. Compile e execute a classe `Principal` para ver o projeto em ação.
 
 ## Exemplo de Uso
 
-A classe `Main` demonstra a criação de objetos `Autor` e `Livro`, bem como a exibição das informações desses objetos. Aqui está um exemplo de como o código pode ser utilizado:
+A classe `Principal` demonstra a criação de objetos `Autor` e `Livro`, bem como a exibição das informações desses objetos. Aqui está um exemplo de como o código pode ser utilizado:
 
 ```java
 public class Main {
