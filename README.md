@@ -38,9 +38,9 @@ A classe `Livro` representa um livro. Ela contém os seguintes atributos e méto
   - Métodos getters e setters para acessar e modificar os atributos.
   - Método `toString()` para retornar uma representação em string do livro.
 
-### Classe `Main`
+### Classe `Principal`
 
-A classe `Principal` contém o método `main` e é responsável por criar instâncias das classes `Autor` e `Livro`, demonstrando a relação entre elas.
+A classe `Principal` contém o método `principal` e é responsável por criar instâncias das classes `Autor` e `Livro`, demonstrando a relação entre elas.
 
 ## Requisitos
 
@@ -58,16 +58,3 @@ A classe `Principal` contém o método `main` e é responsável por criar instâ
 
 3. Compile e execute a classe `Principal` para ver o projeto em ação.
 
-## Exemplo de Uso
-
-A classe `Principal` demonstra a criação de objetos `Autor` e `Livro`, bem como a exibição das informações desses objetos. Aqui está um exemplo de como o código pode ser utilizado:
-
-```java
-public class Main {
-    public static void main(String[] args) {
-        Autor autor = new Autor("Gabriel", "Guerreiro", LocalDate.of(1995, 5, 15));
-        Livro livro = new Livro("Aprendendo Java", "123-456-789", autor);
-
-        System.out.println(livro);
-    }
-}
